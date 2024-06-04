@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 from keras.models import load_model
 
 # Load Model 
-model = load_model(r"C:\Users\My PC\Downloads\Sanjay_final_year_project\Bitcoin.keras")
+model = load_model("Bitcoin.keras")
 
 st.set_page_config(layout="wide")  # Use wide layout for better visualization
 
@@ -123,4 +123,4 @@ fig_future = px.line(future_df, y='Future Predicted Price', title='Future Bitcoi
 st.plotly_chart(fig_future)
 
 # Footer
-st.sidebar.markdown("Developed by [sanjay](https://www.linkedin.com/in/sanjaymahadeva7/)")
+st.sidebar.markdown("Developed by [Harshitha](https://www.linkedin.com/in/harshitha-p-718ba6304/)")
